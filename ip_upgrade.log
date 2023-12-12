@@ -1,0 +1,46 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Nov 29 21:24:47 2023
+| Host         : K4des running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Square_Root'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Square_Root (xilinx.com:ip:cordic:6.0) from (Rev. 11) to (Rev. 20)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Square_Root'.
+
+
+-Upgrade has removed interface 'S_AXIS_PHASE'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Square_Root'. These changes may impact your design.
+
+
+-Upgraded port 'm_axis_dout_tdata' width 16 differs from original width 64
+
+-Upgraded port 's_axis_cartesian_tdata' width 32 differs from original width 64
+
+-Upgrade has removed port 's_axis_cartesian_tready'
+
+-Upgrade has removed port 's_axis_phase_tdata'
+
+-Upgrade has removed port 's_axis_phase_tready'
+
+-Upgrade has removed port 's_axis_phase_tvalid'
+
+
