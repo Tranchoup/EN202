@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Nov 29 21:25:06 2023
+# Process ID: 18444
+# Current directory: C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.runs/Square_Root_synth_1
+# Command line: vivado.exe -log Square_Root.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Square_Root.tcl
+# Log file: C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.runs/Square_Root_synth_1/Square_Root.vds
+# Journal file: C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.runs/Square_Root_synth_1\vivado.jou
+# Running On: K4des, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8378 MB
+#-----------------------------------------------------------
+source Square_Root.tcl -notrace
