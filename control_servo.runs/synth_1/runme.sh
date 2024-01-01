@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.runs/synth_1'
+HD_PWD='C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

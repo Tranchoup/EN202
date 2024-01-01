@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Tue Dec 12 15:34:34 2023
+| Date         : Mon Jan  1 21:31:52 2024
 | Host         : K4des running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_level_projet_drc_routed.rpt -pb top_level_projet_drc_routed.pb -rpx top_level_projet_drc_routed.rpx
 | Design       : top_level_projet
@@ -24,12 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
+             Violations found: 6
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
 | PDRC-153 | Warning  | Gated clock check                                   | 3          |
+| RBOR-1   | Warning  | RAMB output registers                               | 2          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -54,12 +55,22 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net FSM1/data_in_save_reg[7]_i_2_n_0 is a gated clock net sourced by a combinational pin FSM1/data_in_save_reg[7]_i_2/O, cell FSM1/data_in_save_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net FSM1/data_in_save__0 is a gated clock net sourced by a combinational pin FSM1/data_in_save_reg[7]_i_2/O, cell FSM1/data_in_save_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
 Net FSM1/data_out_reg[7]_i_2_n_0 is a gated clock net sourced by a combinational pin FSM1/data_out_reg[7]_i_2/O, cell FSM1/data_out_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+RBOR-1#1 Warning
+RAMB output registers  
+RAMB sept_seg_affichage/transc/s_diaine_reg output DOA (7) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#2 Warning
+RAMB output registers  
+RAMB sept_seg_affichage/transc/s_unit_reg output DOA (7) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
 Related violations: <none>
 
 

@@ -48,7 +48,11 @@ entity top_level_projet is
            -- Boutons
            BTN_play : in STD_LOGIC;
            BTN_pause : in STD_LOGIC;
-           led : out std_logic_vector(1 Downto 0)
+           led : out std_logic_vector(1 Downto 0);
+           
+           --7 segements
+           AN : out STD_LOGIC_VECTOR (7 downto 0);
+           sept_seg : out STD_LOGIC_VECTOR (6 downto 0)
           );
 end top_level_projet;
 
@@ -90,10 +94,21 @@ Component FSM is
            play_pause : out STD_LOGIC_VECTOR (1 downto 0));
 end component;
 
+Component afficheur_top_level_2 is
+    Port ( clk : in STD_LOGIC;
+           rst : in STD_LOGIC;
+           idata : in STD_LOGIC_VECTOR (7 downto 0);
+           play_pause : in STD_LOGIC_VECTOR (1 downto 0);
+           AN : out STD_LOGIC_VECTOR (7 downto 0);
+           sept_seg : out STD_LOGIC_VECTOR (6 downto 0));
+end component;
+
+
 signal degres_accel : std_logic_vector(7 downto 0);
 signal degres_PWM : std_logic_vector(7 downto 0);
 signal BTN_play_registre : std_logic;
 signal BTN_pause_registre : std_logic;
+signal s_play_pause : std_logic_vector(1 downto 0);
 
 
 
@@ -149,6 +164,16 @@ accelerometre: top_level_accelerometre
         clk => clk,
         reset => rst
         );
-   
-
+    sept_seg_affichage : afficheur_top_level_2
+    port map
+    (
+        clk => clk,
+        rst => rst,
+        idata => degres_accel,
+        play_pause => s_play_pause,
+        AN => AN,
+        sept_seg =>sept_seg
+    );
+    
+led <= s_play_pause;
 end Behavioral;

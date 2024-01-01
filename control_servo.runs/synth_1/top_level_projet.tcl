@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.runs/synth_1/top_level_projet.tcl"
+  variable script "C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.runs/synth_1/top_level_projet.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -77,33 +80,38 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.cache/wt [current_project]
-set_property parent.project_path C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.cache/wt [current_project]
+set_property parent.project_path C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.cache/ip [current_project]
+set_property ip_output_repo c:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/import_accelerometre/ADXL362Ctrl.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/import_accelerometre/AccelArithmetics.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/import_accelerometre/AccelerometerCtl.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/FSM.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/Registre_pwm.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/import_accelerometre/SPI_If.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/ce_1Hz.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/convertion_acceleration.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/generation_PWM.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/gestion_CE_PWM.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/gestion_btn.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/top_level_accelerometre.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/top_level_pwm.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/transformation_PWM.vhd
-  C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/new/top_level_projet.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/import_accelerometre/ADXL362Ctrl.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/import_accelerometre/AccelArithmetics.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/import_accelerometre/AccelerometerCtl.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/FSM.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/Registre_pwm.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/import_accelerometre/SPI_If.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/afficheur_top_level_2.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/ce_1Hz.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/compteur_mod_3.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/convertion_acceleration.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/generation_PWM.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/gestion_CE_PWM.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/gestion_btn.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/gestion_cee.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_accelerometre.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_pwm.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/transformation_PWM.vhd
+  C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_projet.vhd
 }
-read_ip -quiet C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/import_accelerometre/Square_Root.xci
-set_property used_in_implementation false [get_files -all c:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/sources_1/import_accelerometre/Square_Root_ooc.xdc]
+read_ip -quiet C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/import_accelerometre/Square_Root.xci
+set_property used_in_implementation false [get_files -all c:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/import_accelerometre/Square_Root_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -114,12 +122,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/K4des/OneDrive/Bureau/control_servo/constraints.xdc
-set_property used_in_implementation false [get_files C:/Users/K4des/OneDrive/Bureau/control_servo/constraints.xdc]
+read_xdc C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/K4des/OneDrive/Bureau/control_servo/control_servo.srcs/utils_1/imports/synth_1/top_level_test_pwm.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/utils_1/imports/synth_1/top_level_test_pwm.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
