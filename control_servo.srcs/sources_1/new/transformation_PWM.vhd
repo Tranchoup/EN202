@@ -50,547 +50,547 @@ begin
     --largeur <= std_logic_vector(to_unsigned(100000,17) + to_unsigned(555,10)*unsigned(degres_in));
 case degres_in is
 
-When "000000000" =>
+When "00000000" =>
    largeur_i <=50000;
 
-When "000000001" =>
+When "00000001" =>
    largeur_i <=51056;
 
-When "000000010" =>
+When "00000010" =>
    largeur_i <=52112;
 
-When "000000011" =>
+When "00000011" =>
    largeur_i <=53168;
 
-When "000000100" =>
+When "00000100" =>
    largeur_i <=54224;
 
-When "000000101" =>
+When "00000101" =>
    largeur_i <=55280;
 
-When "000000110" =>
+When "00000110" =>
    largeur_i <=56336;
 
-When "000000111" =>
+When "00000111" =>
    largeur_i <=57392;
 
-When "000001000" =>
+When "00001000" =>
    largeur_i <=58448;
 
-When "000001001" =>
+When "00001001" =>
    largeur_i <=59504;
 
-When "000001010" =>
+When "00001010" =>
    largeur_i <=60560;
 
-When "000001011" =>
+When "00001011" =>
    largeur_i <=61616;
 
-When "000001100" =>
+When "00001100" =>
    largeur_i <=62672;
 
-When "000001101" =>
+When "00001101" =>
    largeur_i <=63728;
 
-When "000001110" =>
+When "00001110" =>
    largeur_i <=64784;
 
-When "000001111" =>
+When "00001111" =>
    largeur_i <=65840;
 
-When "000010000" =>
+When "00010000" =>
    largeur_i <=66896;
 
-When "000010001" =>
+When "00010001" =>
    largeur_i <=67952;
 
-When "000010010" =>
+When "00010010" =>
    largeur_i <=69008;
 
-When "000010011" =>
+When "00010011" =>
    largeur_i <=70064;
 
-When "000010100" =>
+When "00010100" =>
    largeur_i <=71120;
 
-When "000010101" =>
+When "00010101" =>
    largeur_i <=72176;
 
-When "000010110" =>
+When "00010110" =>
    largeur_i <=73232;
 
-When "000010111" =>
+When "00010111" =>
    largeur_i <=74288;
 
-When "000011000" =>
+When "00011000" =>
    largeur_i <=75344;
 
-When "000011001" =>
+When "00011001" =>
    largeur_i <=76400;
 
-When "000011010" =>
+When "00011010" =>
    largeur_i <=77456;
 
-When "000011011" =>
+When "00011011" =>
    largeur_i <=78512;
 
-When "000011100" =>
+When "00011100" =>
    largeur_i <=79568;
 
-When "000011101" =>
+When "00011101" =>
    largeur_i <=80624;
 
-When "000011110" =>
+When "00011110" =>
    largeur_i <=81680;
 
-When "000011111" =>
+When "00011111" =>
    largeur_i <=82736;
 
-When "000100000" =>
+When "00100000" =>
    largeur_i <=83792;
 
-When "000100001" =>
+When "00100001" =>
    largeur_i <=84848;
 
-When "000100010" =>
+When "00100010" =>
    largeur_i <=85904;
 
-When "000100011" =>
+When "00100011" =>
    largeur_i <=86960;
 
-When "000100100" =>
+When "00100100" =>
    largeur_i <=88016;
 
-When "000100101" =>
+When "00100101" =>
    largeur_i <=89072;
 
-When "000100110" =>
+When "00100110" =>
    largeur_i <=90128;
 
-When "000100111" =>
+When "00100111" =>
    largeur_i <=91184;
 
-When "000101000" =>
+When "00101000" =>
    largeur_i <=92240;
 
-When "000101001" =>
+When "00101001" =>
    largeur_i <=93296;
 
-When "000101010" =>
+When "00101010" =>
    largeur_i <=94352;
 
-When "000101011" =>
+When "00101011" =>
    largeur_i <=95408;
 
-When "000101100" =>
+When "00101100" =>
    largeur_i <=96464;
 
-When "000101101" =>
+When "00101101" =>
    largeur_i <=97520;
 
-When "000101110" =>
+When "00101110" =>
    largeur_i <=98576;
 
-When "000101111" =>
+When "00101111" =>
    largeur_i <=99632;
 
-When "000110000" =>
+When "00110000" =>
    largeur_i <=100688;
 
-When "000110001" =>
+When "00110001" =>
    largeur_i <=101744;
 
-When "000110010" =>
+When "00110010" =>
    largeur_i <=102800;
 
-When "000110011" =>
+When "00110011" =>
    largeur_i <=103856;
 
-When "000110100" =>
+When "00110100" =>
    largeur_i <=104912;
 
-When "000110101" =>
+When "00110101" =>
    largeur_i <=105968;
 
-When "000110110" =>
+When "00110110" =>
    largeur_i <=107024;
 
-When "000110111" =>
+When "00110111" =>
    largeur_i <=108080;
 
-When "000111000" =>
+When "00111000" =>
    largeur_i <=109136;
 
-When "000111001" =>
+When "00111001" =>
    largeur_i <=110192;
 
-When "000111010" =>
+When "00111010" =>
    largeur_i <=111248;
 
-When "000111011" =>
+When "00111011" =>
    largeur_i <=112304;
 
-When "000111100" =>
+When "00111100" =>
    largeur_i <=113360;
 
-When "000111101" =>
+When "00111101" =>
    largeur_i <=114416;
 
-When "000111110" =>
+When "00111110" =>
    largeur_i <=115472;
 
-When "000111111" =>
+When "00111111" =>
    largeur_i <=116528;
 
-When "001000000" =>
+When "01000000" =>
    largeur_i <=117584;
 
-When "001000001" =>
+When "01000001" =>
    largeur_i <=118640;
 
-When "001000010" =>
+When "01000010" =>
    largeur_i <=119696;
 
-When "001000011" =>
+When "01000011" =>
    largeur_i <=120752;
 
-When "001000100" =>
+When "01000100" =>
    largeur_i <=121808;
 
-When "001000101" =>
+When "01000101" =>
    largeur_i <=122864;
 
-When "001000110" =>
+When "01000110" =>
    largeur_i <=123920;
 
-When "001000111" =>
+When "01000111" =>
    largeur_i <=124976;
 
-When "001001000" =>
+When "01001000" =>
    largeur_i <=126032;
 
-When "001001001" =>
+When "01001001" =>
    largeur_i <=127088;
 
-When "001001010" =>
+When "01001010" =>
    largeur_i <=128144;
 
-When "001001011" =>
+When "01001011" =>
    largeur_i <=129200;
 
-When "001001100" =>
+When "01001100" =>
    largeur_i <=130256;
 
-When "001001101" =>
+When "01001101" =>
    largeur_i <=131312;
 
-When "001001110" =>
+When "01001110" =>
    largeur_i <=132368;
 
-When "001001111" =>
+When "01001111" =>
    largeur_i <=133424;
 
-When "001010000" =>
+When "01010000" =>
    largeur_i <=134480;
 
-When "001010001" =>
+When "01010001" =>
    largeur_i <=135536;
 
-When "001010010" =>
+When "01010010" =>
    largeur_i <=136592;
 
-When "001010011" =>
+When "01010011" =>
    largeur_i <=137648;
 
-When "001010100" =>
+When "01010100" =>
    largeur_i <=138704;
 
-When "001010101" =>
+When "01010101" =>
    largeur_i <=139760;
 
-When "001010110" =>
+When "01010110" =>
    largeur_i <=140816;
 
-When "001010111" =>
+When "01010111" =>
    largeur_i <=141872;
 
-When "001011000" =>
+When "01011000" =>
    largeur_i <=142928;
 
-When "001011001" =>
+When "01011001" =>
    largeur_i <=143984;
 
-When "001011010" =>
+When "01011010" =>
    largeur_i <=145040;
 
-When "001011011" =>
+When "01011011" =>
    largeur_i <=146096;
 
-When "001011100" =>
+When "01011100" =>
    largeur_i <=147152;
 
-When "001011101" =>
+When "01011101" =>
    largeur_i <=148208;
 
-When "001011110" =>
+When "01011110" =>
    largeur_i <=149264;
 
-When "001011111" =>
+When "01011111" =>
    largeur_i <=150320;
 
-When "001100000" =>
+When "01100000" =>
    largeur_i <=151376;
 
-When "001100001" =>
+When "01100001" =>
    largeur_i <=152432;
 
-When "001100010" =>
+When "01100010" =>
    largeur_i <=153488;
 
-When "001100011" =>
+When "01100011" =>
    largeur_i <=154544;
 
-When "001100100" =>
+When "01100100" =>
    largeur_i <=155600;
 
-When "001100101" =>
+When "01100101" =>
    largeur_i <=156656;
 
-When "001100110" =>
+When "01100110" =>
    largeur_i <=157712;
 
-When "001100111" =>
+When "01100111" =>
    largeur_i <=158768;
 
-When "001101000" =>
+When "01101000" =>
    largeur_i <=159824;
 
-When "001101001" =>
+When "01101001" =>
    largeur_i <=160880;
 
-When "001101010" =>
+When "01101010" =>
    largeur_i <=161936;
 
-When "001101011" =>
+When "01101011" =>
    largeur_i <=162992;
 
-When "001101100" =>
+When "01101100" =>
    largeur_i <=164048;
 
-When "001101101" =>
+When "01101101" =>
    largeur_i <=165104;
 
-When "001101110" =>
+When "01101110" =>
    largeur_i <=166160;
 
-When "001101111" =>
+When "01101111" =>
    largeur_i <=167216;
 
-When "001110000" =>
+When "01110000" =>
    largeur_i <=168272;
 
-When "001110001" =>
+When "01110001" =>
    largeur_i <=169328;
 
-When "001110010" =>
+When "01110010" =>
    largeur_i <=170384;
 
-When "001110011" =>
+When "01110011" =>
    largeur_i <=171440;
 
-When "001110100" =>
+When "01110100" =>
    largeur_i <=172496;
 
-When "001110101" =>
+When "01110101" =>
    largeur_i <=173552;
 
-When "001110110" =>
+When "01110110" =>
    largeur_i <=174608;
 
-When "001110111" =>
+When "01110111" =>
    largeur_i <=175664;
 
-When "001111000" =>
+When "01111000" =>
    largeur_i <=176720;
 
-When "001111001" =>
+When "01111001" =>
    largeur_i <=177776;
 
-When "001111010" =>
+When "01111010" =>
    largeur_i <=178832;
 
-When "001111011" =>
+When "01111011" =>
    largeur_i <=179888;
 
-When "001111100" =>
+When "01111100" =>
    largeur_i <=180944;
 
-When "001111101" =>
+When "01111101" =>
    largeur_i <=182000;
 
-When "001111110" =>
+When "01111110" =>
    largeur_i <=183056;
 
-When "001111111" =>
+When "01111111" =>
    largeur_i <=184112;
 
-When "010000000" =>
+When "10000000" =>
    largeur_i <=185168;
 
-When "010000001" =>
+When "10000001" =>
    largeur_i <=186224;
 
-When "010000010" =>
+When "10000010" =>
    largeur_i <=187280;
 
-When "010000011" =>
+When "10000011" =>
    largeur_i <=188336;
 
-When "010000100" =>
+When "10000100" =>
    largeur_i <=189392;
 
-When "010000101" =>
+When "10000101" =>
    largeur_i <=190448;
 
-When "010000110" =>
+When "10000110" =>
    largeur_i <=191504;
 
-When "010000111" =>
+When "10000111" =>
    largeur_i <=192560;
 
-When "010001000" =>
+When "10001000" =>
    largeur_i <=193616;
 
-When "010001001" =>
+When "10001001" =>
    largeur_i <=194672;
 
-When "010001010" =>
+When "10001010" =>
    largeur_i <=195728;
 
-When "010001011" =>
+When "10001011" =>
    largeur_i <=196784;
 
-When "010001100" =>
+When "10001100" =>
    largeur_i <=197840;
 
-When "010001101" =>
+When "10001101" =>
    largeur_i <=198896;
 
-When "010001110" =>
+When "10001110" =>
    largeur_i <=199952;
 
-When "010001111" =>
+When "10001111" =>
    largeur_i <=201008;
 
-When "010010000" =>
+When "10010000" =>
    largeur_i <=202064;
 
-When "010010001" =>
+When "10010001" =>
    largeur_i <=203120;
 
-When "010010010" =>
+When "10010010" =>
    largeur_i <=204176;
 
-When "010010011" =>
+When "10010011" =>
    largeur_i <=205232;
 
-When "010010100" =>
+When "10010100" =>
    largeur_i <=206288;
 
-When "010010101" =>
+When "10010101" =>
    largeur_i <=207344;
 
-When "010010110" =>
+When "10010110" =>
    largeur_i <=208400;
 
-When "010010111" =>
+When "10010111" =>
    largeur_i <=209456;
 
-When "010011000" =>
+When "10011000" =>
    largeur_i <=210512;
 
-When "010011001" =>
+When "10011001" =>
    largeur_i <=211568;
 
-When "010011010" =>
+When "10011010" =>
    largeur_i <=212624;
 
-When "010011011" =>
+When "10011011" =>
    largeur_i <=213680;
 
-When "010011100" =>
+When "10011100" =>
    largeur_i <=214736;
 
-When "010011101" =>
+When "10011101" =>
    largeur_i <=215792;
 
-When "010011110" =>
+When "10011110" =>
    largeur_i <=216848;
 
-When "010011111" =>
+When "10011111" =>
    largeur_i <=217904;
 
-When "010100000" =>
+When "10100000" =>
    largeur_i <=218960;
 
-When "010100001" =>
+When "10100001" =>
    largeur_i <=220016;
 
-When "010100010" =>
+When "10100010" =>
    largeur_i <=221072;
 
-When "010100011" =>
+When "10100011" =>
    largeur_i <=222128;
 
-When "010100100" =>
+When "10100100" =>
    largeur_i <=223184;
 
-When "010100101" =>
+When "10100101" =>
    largeur_i <=224240;
 
-When "010100110" =>
+When "10100110" =>
    largeur_i <=225296;
 
-When "010100111" =>
+When "10100111" =>
    largeur_i <=226352;
 
-When "010101000" =>
+When "10101000" =>
    largeur_i <=227408;
 
-When "010101001" =>
+When "10101001" =>
    largeur_i <=228464;
 
-When "010101010" =>
+When "10101010" =>
    largeur_i <=229520;
 
-When "010101011" =>
+When "10101011" =>
    largeur_i <=230576;
 
-When "010101100" =>
+When "10101100" =>
    largeur_i <=231632;
 
-When "010101101" =>
+When "10101101" =>
    largeur_i <=232688;
 
-When "010101110" =>
+When "10101110" =>
    largeur_i <=233744;
 
-When "010101111" =>
+When "10101111" =>
    largeur_i <=234800;
 
-When "010110000" =>
+When "10110000" =>
    largeur_i <=235856;
 
-When "010110001" =>
+When "10110001" =>
    largeur_i <=236912;
 
-When "010110010" =>
+When "10110010" =>
    largeur_i <=237968;
 
-When "010110011" =>
+When "10110011" =>
    largeur_i <=239024;
 
-When "010110100" =>
+When "10110100" =>
    largeur_i <=240000;
 
 When others =>

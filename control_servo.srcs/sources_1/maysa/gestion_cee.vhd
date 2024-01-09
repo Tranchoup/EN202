@@ -39,27 +39,27 @@ end gestion_cee;
 
 architecture Behavioral of gestion_cee is
 
-signal s_count_val_20k : unsigned(14 downto 0) := (others => '0');
+signal s_count_val_200k : unsigned(14 downto 0) := (others => '0');
 
 begin
-counter_value_register_20k : process(clk,rst)
+counter_value_register_200k : process(clk,rst)
 		begin 
 		    if(rst = '1') then
-		      s_count_val_20k <= (others => '0');
+		      s_count_val_200k <= (others => '0');
 			elsif(clk'event and clk = '1') then
-				if (s_count_val_20k = to_unsigned(2000,15)) then
+				if (s_count_val_200k = to_unsigned(200000,15)) then
 --if (s_count_val = to_unsigned(10,15)) then
-					s_count_val_20k <= (others => '0');
+					s_count_val_200k <= (others => '0');
 				else
-					s_count_val_20k <= s_count_val_20k + 1;
+					s_count_val_200k <= s_count_val_200k + 1;
 				end if;
 			end if;
-		end process counter_value_register_20k;
+		end process counter_value_register_200k;
 
 
-mux_ce : process(s_count_val_20k)
+mux_ce : process(s_count_val_200k)
     begin
-                if(s_count_val_20k = to_unsigned(2000,15)) then
+                if(s_count_val_200k = to_unsigned(200000,15)) then
                     ce <= '1';
                 else
                     ce <= '0';
