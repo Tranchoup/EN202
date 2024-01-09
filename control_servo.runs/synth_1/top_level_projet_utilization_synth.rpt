@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon Jan  1 21:24:36 2024
+| Date         : Tue Jan  9 15:05:22 2024
 | Host         : K4des running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_level_projet_utilization_synth.rpt -pb top_level_projet_utilization_synth.pb
 | Design       : top_level_projet
