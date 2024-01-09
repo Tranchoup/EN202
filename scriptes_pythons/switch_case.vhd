@@ -1,62 +1,4 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 01.01.2024 16:54:07
--- Design Name: 
--- Module Name: top_level_degree_7seg - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
-entity top_level_degree_7seg is
-    Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC;
-           idata : in STD_LOGIC_VECTOR (7 downto 0);
-           unit : out STD_LOGIC_VECTOR (6 downto 0);
-           dizaine : out STD_LOGIC_VECTOR (6 downto 0);
-           cent : out STD_LOGIC_VECTOR (6 downto 0));
-end top_level_degree_7seg;
-
-architecture Behavioral of top_level_degree_7seg is
-
-signal s_unit : std_logic_vector(6 downto 0);
-signal s_diaine : std_logic_vector(6 downto 0);
-signal s_cent : std_logic_vector(6 downto 0);
-
-
-begin
-process(clk,rst)
-begin
-    
-    if rst = '1' then
-        unit <= "1111111";
-        dizaine <= "1111111";
-        cent <= "1111111";
-    elsif clk'event and clk='1' then
-    case (idata) is
+case (nb_binaire) is
 when "00000000" =>
     s_unit <= "1000000";
     s_diaine <= "1000000";
@@ -957,15 +899,4 @@ when "10110011" =>
     s_diaine <= "1111000";
     s_cent <= "1111001";
 
-when others =>
-    s_unit <= "1111111";
-    s_diaine <= "1111111";
-    s_cent <= "1111111";
 end case;
-unit <= s_unit;
-dizaine<= s_diaine;
-cent<= s_cent;
-
-end if;
-end process;
-end Behavioral;

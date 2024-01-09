@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Jan  9 17:10:27 2024
-# Process ID: 6728
+# Start of session at: Tue Jan  9 18:24:12 2024
+# Process ID: 23276
 # Current directory: C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.runs/synth_1
 # Command line: vivado.exe -log top_level_projet.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level_projet.tcl
 # Log file: C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.runs/synth_1/top_level_projet.vds
@@ -12,7 +12,7 @@
 # Running On: K4des, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 8378 MB
 #-----------------------------------------------------------
 source top_level_projet.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 474.672 ; gain = 179.359
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 472.711 ; gain = 177.641
 Command: read_checkpoint -auto_incremental -incremental C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/utils_1/imports/synth_1/top_level_test_pwm.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/utils_1/imports/synth_1/top_level_test_pwm.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,15 +25,14 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19040
+INFO: [Synth 8-7075] Helper process launched with PID 22688
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1335.562 ; gain = 439.316
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1336.566 ; gain = 440.836
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-9112] actual for formal port 's_axis_cartesian_tdata' is neither a static name nor a globally static expression [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/import_accelerometre/AccelArithmetics.vhd:233]
 INFO: [Synth 8-638] synthesizing module 'top_level_projet' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_projet.vhd:59]
 INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/FSM.vhd:34' bound to instance 'FSM1' of component 'FSM' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_projet.vhd:117]
 INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/FSM.vhd:44]
-WARNING: [Synth 8-614] signal 'data_in_save' is read in the process but is not in the sensitivity list [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/FSM.vhd:87]
 INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/FSM.vhd:44]
 INFO: [Synth 8-3491] module 'gestion_btn' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/gestion_btn.vhd:34' bound to instance 'BTN_L' of component 'gestion_btn' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_projet.vhd:129]
 INFO: [Synth 8-638] synthesizing module 'gestion_btn' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/gestion_btn.vhd:41]
@@ -83,18 +82,15 @@ INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (0#1) [C:/Users/
 INFO: [Synth 8-3491] module 'convertion_acceleration' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/convertion_acceleration.vhd:42' bound to instance 'convertion_accelerometre_degres' of component 'convertion_acceleration' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_accelerometre.vhd:117]
 INFO: [Synth 8-638] synthesizing module 'convertion_acceleration' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/convertion_acceleration.vhd:47]
 INFO: [Synth 8-226] default block is never used [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/convertion_acceleration.vhd:55]
-WARNING: [Synth 8-614] signal 'degres_i' is read in the process but is not in the sensitivity list [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/convertion_acceleration.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'convertion_acceleration' (0#1) [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/convertion_acceleration.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'top_level_accelerometre' (0#1) [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_accelerometre.vhd:46]
 INFO: [Synth 8-3491] module 'top_level_pwm' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_pwm.vhd:34' bound to instance 'Control_servo' of component 'top_level_pwm' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_projet.vhd:159]
 INFO: [Synth 8-638] synthesizing module 'top_level_pwm' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_pwm.vhd:41]
 INFO: [Synth 8-3491] module 'Registre_pwm' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/Registre_pwm.vhd:34' bound to instance 'registre' of component 'Registre_pwm' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_pwm.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'Registre_pwm' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/Registre_pwm.vhd:42]
-WARNING: [Synth 8-614] signal 'idata' is read in the process but is not in the sensitivity list [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/Registre_pwm.vhd:48]
 INFO: [Synth 8-256] done synthesizing module 'Registre_pwm' (0#1) [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/Registre_pwm.vhd:42]
 INFO: [Synth 8-3491] module 'transformation_PWM' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/transformation_PWM.vhd:34' bound to instance 'conversion' of component 'transformation_pwm' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_pwm.vhd:92]
 INFO: [Synth 8-638] synthesizing module 'transformation_PWM' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/transformation_PWM.vhd:39]
-WARNING: [Synth 8-614] signal 'largeur_i' is read in the process but is not in the sensitivity list [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/transformation_PWM.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'transformation_PWM' (0#1) [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/transformation_PWM.vhd:39]
 INFO: [Synth 8-3491] module 'generation_PWM' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/generation_PWM.vhd:37' bound to instance 'largeur' of component 'generation_PWM' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_pwm.vhd:96]
 INFO: [Synth 8-638] synthesizing module 'generation_PWM' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/generation_PWM.vhd:45]
@@ -110,116 +106,12 @@ INFO: [Synth 8-3491] module 'afficheur_top_level_2' declared at 'C:/Users/K4des/
 INFO: [Synth 8-638] synthesizing module 'afficheur_top_level_2' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/afficheur_top_level_2.vhd:43]
 INFO: [Synth 8-3491] module 'top_level_degree_7seg' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:34' bound to instance 'transc' of component 'top_level_degree_7seg' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/afficheur_top_level_2.vhd:89]
 INFO: [Synth 8-638] synthesizing module 'top_level_degree_7seg' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:43]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:60]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:65]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:70]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:75]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:80]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:85]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:90]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:95]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:100]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:105]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:110]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:115]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:120]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:125]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:130]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:135]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:140]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:145]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:150]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:155]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:160]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:165]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:170]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:175]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:180]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:185]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:190]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:195]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:200]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:205]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:210]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:215]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:220]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:225]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:230]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:235]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:240]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:245]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:250]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:255]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:260]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:265]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:270]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:275]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:280]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:285]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:290]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:295]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:300]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:305]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:310]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:315]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:320]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:325]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:330]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:335]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:340]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:345]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:350]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:355]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:360]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:365]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:370]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:375]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:380]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:385]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:390]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:395]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:400]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:405]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:410]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:415]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:420]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:425]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:430]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:435]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:440]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:445]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:450]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:455]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:460]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:465]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:470]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:475]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:480]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:485]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:490]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:495]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:500]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:505]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:510]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:515]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:520]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:525]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:530]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:535]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:540]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:545]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:550]
-WARNING: [Synth 8-6044] Case expression and choice expression width mismatch, Case expression is 8 wide and choice expression is 10 wide [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:555]
-INFO: [Common 17-14] Message 'Synth 8-6044' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-256] done synthesizing module 'top_level_degree_7seg' (0#1) [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_degree_7seg.vhd:43]
 INFO: [Synth 8-3491] module 'mux_8' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:34' bound to instance 'MUX' of component 'mux_8' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/afficheur_top_level_2.vhd:97]
 INFO: [Synth 8-638] synthesizing module 'mux_8' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:44]
 INFO: [Synth 8-226] default block is never used [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:51]
 INFO: [Synth 8-226] default block is never used [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:74]
 INFO: [Synth 8-226] default block is never used [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:96]
-WARNING: [Synth 8-614] signal 'unit' is read in the process but is not in the sensitivity list [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:47]
-WARNING: [Synth 8-614] signal 'dizaine' is read in the process but is not in the sensitivity list [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:47]
-WARNING: [Synth 8-614] signal 'cent' is read in the process but is not in the sensitivity list [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'mux_8' (0#1) [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/mux_8.vhd:44]
 INFO: [Synth 8-3491] module 'compteur_mod_3' declared at 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/compteur_mod_3.vhd:34' bound to instance 'cpt1' of component 'compteur_mod_3' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/afficheur_top_level_2.vhd:105]
 INFO: [Synth 8-638] synthesizing module 'compteur_mod_3' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/maysa/compteur_mod_3.vhd:42]
@@ -232,18 +124,18 @@ INFO: [Synth 8-256] done synthesizing module 'afficheur_top_level_2' (0#1) [C:/U
 INFO: [Synth 8-256] done synthesizing module 'top_level_projet' (0#1) [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_projet.vhd:59]
 WARNING: [Synth 8-3848] Net s_play_pause in module/entity top_level_projet does not have driver. [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/top_level_projet.vhd:111]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.129 ; gain = 557.883
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1454.230 ; gain = 558.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.129 ; gain = 557.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1454.230 ; gain = 558.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1454.129 ; gain = 557.883
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1454.230 ; gain = 558.500
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1454.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1454.230 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -256,30 +148,30 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_projet_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1510.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1553.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1510.625 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1553.656 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'accelerometre/Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for accelerometre/Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'curent_state_reg' in module 'FSM'
 INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
@@ -344,7 +236,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using e
 WARNING: [Synth 8-327] inferring latch for variable 'data_save_reg' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/Registre_pwm.vhd:51]
 WARNING: [Synth 8-327] inferring latch for variable 'data_save_reg' [C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.srcs/sources_1/new/generation_PWM.vhd:56]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -449,7 +341,7 @@ DSP Report: register accelerometre/Inst_AccelerometerCtl/Accel_Calculation/ACCEL
 DSP Report: operator accelerometre/Inst_AccelerometerCtl/Accel_Calculation/multOp is absorbed into DSP accelerometre/Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_SQUARE_reg.
 WARNING: [Synth 8-3332] Sequential element (Control_servo/largeur/data_save_reg[3]) is unused and will be removed from module top_level_projet.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
  Sort Area is  accelerometre/Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_SQUARE_reg_0 : 0 0 : 1100 1100 : Used 1 time 0
  Sort Area is  accelerometre/Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_SQUARE_reg_3 : 0 0 : 1100 1100 : Used 1 time 0
@@ -488,13 +380,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -502,7 +394,7 @@ Start Technology Mapping
 INFO: [Synth 8-7052] The timing for the instance sept_seg_affichage/transc/s_unit_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance sept_seg_affichage/transc/s_diaine_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -520,37 +412,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -613,18 +505,18 @@ Report Cell Usage:
 |21    |OBUF             |    21|
 +------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1554.453 ; gain = 658.723
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1515.227 ; gain = 557.883
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1515.227 ; gain = 618.980
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 1554.453 ; gain = 558.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 1554.453 ; gain = 658.723
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1515.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1554.453 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1515.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1554.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 38 instances were transformed.
   LD => LDCE: 30 instances
@@ -632,10 +524,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete | Checksum: 36297525
 INFO: [Common 17-83] Releasing license: Synthesis
-100 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+99 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 1515.227 ; gain = 1028.051
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1515.227 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 1554.453 ; gain = 1068.555
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1554.453 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.runs/synth_1/top_level_projet.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_projet_utilization_synth.rpt -pb top_level_projet_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan  9 17:11:28 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  9 18:25:26 2024...

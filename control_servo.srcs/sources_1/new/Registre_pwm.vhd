@@ -45,7 +45,7 @@ signal data_save : std_logic_vector(7 downto 0) := (others => '0');
 
 begin
 
-process(ce,reset)
+process(ce,reset,idata)
 begin
     if (reset= '1') then
         data_save <= "00000000";

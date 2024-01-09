@@ -49,7 +49,7 @@ architecture Behavioral of convertion_acceleration is
 signal degres_i : integer;
 
 begin
-process(acceleration)
+process(acceleration,degres_i)
 begin
 
 case acceleration is

@@ -24,7 +24,7 @@ def convert_to_7_segment(number):
 with open('switch_case.vhd', 'w') as f:
     f.write("case (nb_binaire) is\n")
     for i in range(180):
-        binary_value = format(i, '010b')# Convertir le nombre en binaire sur 10 bits
+        binary_value = format(i, '08b')# Convertir le nombre en binaire sur 10 bits
         #unit = format(i%10, '04b')
         #diz = format((i//10)%10, '04b')
         #cent = format (i//100, '04b')

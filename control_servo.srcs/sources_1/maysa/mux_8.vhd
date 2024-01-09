@@ -44,7 +44,7 @@ end mux_8;
 architecture Behavioral of mux_8 is
 
 begin
-multiplexeur_8: process(play_pause,control)
+multiplexeur_8: process(play_pause,control,unit,dizaine,cent)
 		begin 
             case play_pause is
                 when "10"=> -- PLAY on affiche ------] 

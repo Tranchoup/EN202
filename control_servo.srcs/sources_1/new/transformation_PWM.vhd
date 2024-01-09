@@ -44,7 +44,7 @@ signal largeur_i : integer;
 
 
 begin
-process(degres_in) 
+process(degres_in,largeur_i) 
 begin
     --largeur <= std_logic_vector(UNSIGNED(nb_de_coups_d_horloge_1_deg)*unsigned(degres_in));
     --largeur <= std_logic_vector(to_unsigned(100000,17) + to_unsigned(555,10)*unsigned(degres_in));

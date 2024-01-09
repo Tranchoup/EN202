@@ -84,7 +84,7 @@ f: process(curent_state, b_play, b_pause)
         end CASE;
      end process;
      
- g : process(curent_state,data_in)
+ g : process(curent_state,data_in,data_in_save)
     begin
         CASE curent_state is 
             when INIT=>
