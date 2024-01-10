@@ -5,7 +5,7 @@
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
 <Project Product="Vivado" Version="7" Minor="65" Path="C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/control_servo.xpr">
-  <DefaultLaunch Dir="$PRUNDIR"/>
+  <DefaultLaunch Dir="C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/bitstream"/>
   <Configuration>
     <Option Name="Id" Val="62db4d4968ff4ddba365efa5584274a9"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
@@ -364,7 +364,7 @@
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <GeneratedRun Dir="C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/bitstream" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -374,7 +374,7 @@
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <GeneratedRun Dir="C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/bitstream" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -392,7 +392,7 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <GeneratedRun Dir="C:/Users/K4des/OneDrive/Bureau/ENSEIRB/2A/EN202/EN202/bitstream" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>

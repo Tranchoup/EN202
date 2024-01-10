@@ -1547,46 +1547,46 @@ When "111110001" =>
    degres_i <=166;
 
 When "111110010" =>
-   degres_i <=166;
+   degres_i <=167;
 
 When "111110011" =>
-   degres_i <=167;
+   degres_i <=168;
 
 When "111110100" =>
-   degres_i <=167;
+   degres_i <=169;
 
 When "111110101" =>
-   degres_i <=167;
+   degres_i <=170;
 
 When "111110110" =>
-   degres_i <=168;
+   degres_i <=171;
 
 When "111110111" =>
-   degres_i <=168;
+   degres_i <=172;
 
 When "111111000" =>
-   degres_i <=168;
+   degres_i <=173;
 
 When "111111001" =>
-   degres_i <=169;
+   degres_i <=174;
 
 When "111111010" =>
-   degres_i <=169;
+   degres_i <=175;
 
 When "111111011" =>
-   degres_i <=169;
+   degres_i <=176;
 
 When "111111100" =>
-   degres_i <=170;
+   degres_i <=177;
 
 When "111111101" =>
-   degres_i <=170;
+   degres_i <=178;
 
 When "111111110" =>
-   degres_i <=170;
+   degres_i <=179;
 
 When "111111111" =>
-   degres_i <=171;
+   degres_i <=180;
 when others =>
         degres_i <= 180; 
 end case;
